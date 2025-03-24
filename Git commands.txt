@@ -1,0 +1,20 @@
+git status
+git branch
+git branch new_branch
+git switch new_branch
+git branch experimental
+git switch experimental
+
+
+
+--renaming a branch
+--lets rename experimental branch to something else (Note: you have to be in the in the branch that you want to rename)
+
+git branch -m please_delete
+
+
+--delete a branch
+--Note: to delete the branch first you need to switch the branch i.e, you should not be using the branch 
+
+git switch master
+git branch -d please_delete
