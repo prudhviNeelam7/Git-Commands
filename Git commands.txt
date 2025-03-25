@@ -24,3 +24,35 @@ git branch -m please_delete
 
 git switch master
 git branch -d please_delete
+
+
+---merging(fast-forward)
+--create two branches 1.master, 2.new_branch. Try to merge these two
+--note: before merging make sure you are in receiver end 
+
+git switch master
+git merge new_branch
+
+--create another branch after merging called experimental and create a new file into the experimental branch and try to merge the experimental branch with the master branch
+
+git branch experimental
+git switch experimental
+
+
+--merge with multiple commits no conflicts
+git switch master 
+git merge experimental
+
+
+
+-----merge with multiple commits with conflicts
+--create another branch after merging called bug_qa and edit the myfile.txt in master branch and 
+myfile.txt in bug_qa branch and 
+try to merge the both branch with the master branch
+
+git branch bug_qa
+git switch master
+git merge bug_qa
+
+
+
