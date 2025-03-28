@@ -56,3 +56,14 @@ git merge bug_qa
 
 
 
+---
+git log --oneline       #this command gives us the first 7 characters of the hash & commit message
+git checkout <hash>    #<hash>
+git checkout master     #this moves the head to the current state 
+
+
+--restoring 
+--this wil restore a file to its state at the previous most recent commit
+git restore <file_name>    
+
+
